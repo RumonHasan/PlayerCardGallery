@@ -1,0 +1,92 @@
+{
+    "player": [
+        {
+            "name": "Kevin",
+            "stats": {
+                "pace": "85%",
+                "skills": "90%",
+                "strengthShoot": "75%",
+                "dribble": "95%"
+            },
+            "image": {"url": "./images/players/Kevin.jpg"} 
+        },
+
+        {
+            "name": "Beast",
+            "stats": {
+                "pace": "75%",
+                "skills": "90%",
+                "strengthShoot": "95%",
+                "dribble": "85%"
+            },
+            "image": {"url": "./images/players/beast.jpg"} 
+        },
+
+        {
+            "name": "Alex",
+            "stats": {
+                "pace": "70%",
+                "skills": "75%",
+                "strengthShoot": "85%",
+                "dribble": "75%"
+            },
+            "image": {"url": "./images/players/Alex.jpg"} 
+        },
+
+        {
+            "name": "Ryotaro",
+            "stats": {
+                "pace": "95%",
+                "skills": "75%",
+                "strengthShoot": "85%",
+                "dribble": "95%"
+            },
+            "image": {"url": "./images/players/ryotaro.jpg"} 
+        },
+
+        {
+            "name": "Mayur",
+            "stats": {
+                "pace": "80%",
+                "skills": "85%",
+                "strengthShoot": "90%",
+                "dribble": "80%"
+            },
+            "image": {"url": "./images/players/mayur.jpg"} 
+        },
+
+        {
+            "name": "Stephen",
+            "stats": {
+                "pace": "65%",
+                "skills": "65%",
+                "strengthShoot": "85%",
+                "dribble": "70%"
+            },
+            "image": {"url": "./images/players/stephen.jpg"} 
+        },
+
+        {
+            "name": "Miash",
+            "stats": {
+                "pace": "70%",
+                "skills": "85%",
+                "strengthShoot": "80%",
+                "dribble": "75%"
+            },
+            "image": {"url": "./images/players/miash.jpg"} 
+        },
+
+        {
+            "name": "Rumon",
+            "stats": {
+                "pace": "95%",
+                "skills": "85%",
+                "strengthShoot": "85%",
+                "dribble": "95%"
+            },
+            "image": {"url": "./images/players/rumon.jpg"} 
+        }
+
+    ]
+}

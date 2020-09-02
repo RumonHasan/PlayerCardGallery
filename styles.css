@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+/* setting default root variables */
+:root{
+    --primaryColor: blue;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s ease-in-out;
+    --mainPadding: 0.1 rem;
+}
+
+*{ /* default margin setup for the webpage */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar design codes */
+.navbar{
+    position:sticky;
+    top:0;
+    background: var(--mainBlack);
+    width:100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.navbar-center{
+    width: 100%;
+    max-width: 1170px;/* will remained centered in 1170px width */
+    margin: 0 auto; /* setting top and bottom margins to 0 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--mainPadding);
+}
+
+.logo{
+    height: 70px;
+    width: 120px;
+}
+
+.nav-icon{
+    font-size: 2rem;
+    color:var(--mainWhite);
+    cursor: pointer;
+}
+
+.gallery{
+    font-size: 2rem;
+    cursor:pointer;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-family: 'Bungee Inline', cursive;
+    color: var(--mainWhite);
+}
+
+/* navbar design code END */
+
+/* header design codes */
+
+.morishita {
+    min-height: calc(100vh - 70px);
+    background:url("./images/field.jpg") center/cover no-repeat; /* best solution to center the wallpaper without any repetition */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banner{
+    text-align: center;
+    background: var(--mainGrey);
+    opacity: 0.3;
+    display: inline-block;
+    padding: 3rem;
+    transition: var(--mainTransition);
+}
+
+.banner:hover{
+    opacity: 1;
+    transition: var(--mainTransition);
+}
+
+.banner-title{ /* animation design is linked with the nav-bar design */
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 2.5rem;
+    letter-spacing: var(--mainSpacing);
+}
+
+/* end of header design */
+
+/* player card design starts here */
+.section-title h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    font-family:'Lobster', cursive;
+}
+
+
+.player-center{
+    width: 90vw;
+    margin: 0 auto; /* in order to centralise the grid column */
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap:2rem;
+    grid-row-gap: 2rem;
+}
+
+/* card control face animation */
+.card{
+    position: relative;
+    height: 300px;
+    margin-bottom: 100px;
+    transform-style: preserve-3d;
+    
+}
+
+.card .face{ /* contains information of both back and front faces of the card */
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height:100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 2s ease-in-out;
+    transform:perspective(500px) rotateY(0deg);
+}
+
+.card .card-front{
+    border: 2px solid black;
+}
+
+.card .card-back{
+    border: 2px solid black;
+}
+/* all the card faces need move in  unisen in order to create the 3d animation */
+.card:hover .card-front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .card-back{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .card-back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+/* card face control ends here*/
+
+.content img{
+    height: 100%;
+    width: 100%;
+}
+
+.player-name{
+    position:absolute;
+    top: 80%;
+    left: 0;
+}
+
+.player-btn{
+    border:none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    font-size:1.5rem;
+}
+
+.card-back{
+    background: #262626;
+}
+.content-back{
+    width: 100%;
+}
+
+.back-header{
+    color:white;
+    text-align: center;
+}
+
+.skills-box{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.skills-box p{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 15px;
+}
+
+.skills-box p:nth-child(2){ /* aligns the second p element of the of the paragraph */
+    float: right;
+    position:relative; 
+    top: -27px;
+}
+
+.skill{
+    background:#202020;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #0fffb7;
+    border-radius: 2px;
+}
+
+.skill-level{
+    background: #0fffb7;
+    width: 100%;
+    height: 5px;
+}
+
+/* player card design code ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
